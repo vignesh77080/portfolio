@@ -1,0 +1,64 @@
+.humanWrap{
+    /* width: 40%;
+    display: block;
+    position: absolute;
+    padding: 20px 5%;
+    right: 0;
+    bottom: 10%; */
+    width: 40%;
+    display: block;
+    float: right;
+    padding: 20px 5%;
+    align-self: center;
+    opacity: 1;
+}
+
+.eyesCat{
+    animation: eyesAnimation 2s 3s linear 3 forwards;
+} 
+
+@keyframes eyesAnimation{
+    0%{
+        transform: rotate(0deg) translateX(2px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg) translateX(2px) rotate( 360deg);
+    }
+}
+
+.fullAnimate{
+    animation: lightSpeedInRight 1s ease-out forwards;
+}
+
+@keyframes lightSpeedInRight {
+    0% {
+        -webkit-transform: translate3d(100%,0,0) skewX(-30deg);
+        transform: translate3d(100%,0,0) skewX(-30deg);
+        opacity: 0
+    }
+
+    60% {
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg);
+        opacity: 1
+    }
+
+    80% {
+        -webkit-transform: skewX(-5deg);
+        transform: skewX(-5deg)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width:767px){
+    .humanWrap{
+        width: 85%;
+        position: relative;
+        z-index: 7;
+    }
+}

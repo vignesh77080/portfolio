@@ -1,0 +1,33 @@
+.backdropDiv{
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+@media (max-width:767px){
+    .backdropDiv {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        background: #000;
+    }
+    
+    .Open{
+        display: block !important;
+    }
+    
+    .Closed{
+        display: none;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    
+}

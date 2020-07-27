@@ -1,0 +1,92 @@
+.navigationLists{
+    padding: 10px;
+    margin: 0 25px;
+    transition: 0.5s all;
+    display: inline-block;
+    animation: slideToBottom 1s ease-in-out forwards;
+}
+
+.navAnimate{
+    animation: slideToBottom 1s ease-in-out forwards;
+}
+
+@keyframes slideToBottom{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+        padding: 0;
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        padding: 10px;
+    }
+
+}
+
+.navigationLists a{
+    color: #000000;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+@media (max-width:767px){
+    .navigationLists{
+        padding: 10px;
+        margin: 5px auto;
+        transition: 0.5s all;
+        display: block;
+    }
+    .navigationLists a {
+        color: #fff;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+}
+
+@keyframes anim-in-text {
+    0% {
+        transform: translate3d(100%,0,0)
+    }
+
+    to {
+        transform: translateZ(0)
+    }
+}
+
+@keyframes anim-out-text {
+    0% {
+        transform: translateZ(0)
+    }
+
+    to {
+        transform: translate3d(-100%,0,0)
+    }
+}
+
+.navigationLists a:before {
+    content: attr(data-attribute);
+    position: absolute;
+    transform: translate3d(0,30px,0);
+    opacity: 0;
+    color: var(--green);
+    transition: opacity .3s ease,transform .3s ease,color .3s ease;
+}
+
+.navigationLists:hover a:before {
+    transform: translate3d(0px,0px,0px);
+    opacity: 1;
+}
+
+.navigationLists:hover a span {
+    transform: translate3d(0px, -30px, 0);
+    opacity: 0;
+    transition: opacity .3s ease,transform .3s ease,color .3s ease;
+}
+
+.active a{
+    color: var(--green);
+}

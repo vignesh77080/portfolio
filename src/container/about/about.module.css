@@ -1,0 +1,21 @@
+.about{
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%); */
+    padding: 5vw 0;
+    background: #ffffff;
+}
+
+.about svg{
+    stroke: var(--secondaryColor);
+}
+
+
+@media (max-width:767px){
+    .about{
+        padding: 12vw 0 10vw;
+    }
+
+    .h2{
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    margin: auto;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+:root{
+    --white : #ffffff;
+    --primaryColor : #e54360;
+    --secondaryColor : rgb(6,46,64);
+    --light : #f8f9fa;
+    --leftSvg : translate(-40%,20%) rotate(-15deg) scaleX(-1);
+    --mobleft : translate(-40%,100%) rotate(-15deg) scaleX(-1);
+    --rightSvg : translate(-16%, 0%) rotate(22deg); 
+    --green : #ffb71b;
+    --code-highlight : rgb(250, 200, 99);
+    --code-blue :rgb(121, 182, 242);
+    --code-tag: rgb(252, 146, 158);
+    --code-dec : rgb(255, 139, 80);
+}

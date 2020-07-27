@@ -1,0 +1,73 @@
+.getintouch {
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 0;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    z-index: 12;
+}
+
+/* .getintouch h2 {
+    font-size: 6vw;
+} */
+
+.getintouch form span {
+    font-size: 3vw;
+}
+
+.getintouch form {
+    min-height: 50vh;
+}
+
+.getintouch form p {
+    font-size: 2rem;
+}
+
+.getintouch form span:nth-child(3){
+    display: block;
+}
+
+.getintouch input[type="submit"] {
+    padding: 8px 20px;
+    width: 100%;
+    max-width: 200px;
+    height: 60px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 40px;
+    color: var(--light);
+    outline: none;
+    background: transparent;
+    border-color: var(--light);
+    border-width: 1px;
+    transition: all 0.5s;
+}
+
+.getintouch input[type="submit"]:hover {
+    background: var(--light);
+    color: var(--secondaryColor);
+    border-color: var(--secondaryColor);
+}
+
+.getintouch input[type="submit"]:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+@media (max-width:767px){
+    .getintouch input[type="submit"]{
+        width: 100%;
+        max-width: 150px;
+        height: 40px;
+        font-size: 1rem;
+        margin: 30px 0 0 ;
+    }
+
+    .getintouch form p {
+        font-size: 1rem;
+    }
+
+}
